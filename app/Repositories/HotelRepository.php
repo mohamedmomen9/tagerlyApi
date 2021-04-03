@@ -88,7 +88,11 @@ class HotelRepository extends BaseRepository implements HotelRepositoryInterface
         if (count($search)) {
             foreach($search as $key => $value) {
                 if (in_array($key, $this->getFieldsSearchable())) {
-                    $query->where($key, $value);
+                    if($key == 'price_range') {
+                        $query->priceRange($value);
+                    } else {
+                        $query->where($key, $value);
+                    }
                 }
             }
         }

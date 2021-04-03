@@ -26,4 +26,11 @@ class Hotel extends Model
     {
         return HotelFactory::new();
     }
+
+    public function scopePriceRange($query, $range)
+    {
+        $limits = explode(':', str_replace('$', '', $range));
+
+        return $query->whereBetween('price', $limits);
+    }
 }
