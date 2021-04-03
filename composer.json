@@ -17,7 +17,6 @@
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.4",
         "mockery/mockery": "^1.4.2",
-        "mpociot/laravel-apidoc-generator": "^4.8",
         "nunomaduro/collision": "^5.0",
         "phpunit/phpunit": "^9.3.3"
     },

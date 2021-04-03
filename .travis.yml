@@ -15,12 +15,12 @@ cache:
     - vendor
 
 before_script:
-  - "composer require codeclimate/php-test-reporter --dev"
   - cp .env.travis .env
   - sudo mysql -e 'CREATE DATABASE tagerlyapi;'
   - composer self-update
   - composer install --no-interaction
   - php artisan migrate --no-interaction -vvv
+  - php artisan test
 
 script:
   - vendor/bin/phpunit
