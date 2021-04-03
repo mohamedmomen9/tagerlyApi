@@ -21,6 +21,7 @@
 5. Run `php artisan migrate`
 6. Run `php artisan db:seed`
 
-## Examples
+## Badges
 
-1. Clone/Download a repo.
+[![Maintainability](https://api.codeclimate.com/v1/badges/90ee07240eba62d186ac/maintainability)](https://codeclimate.com/github/mohamedmomen9/tagerlyApi/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/90ee07240eba62d186ac/test_coverage)](https://codeclimate.com/github/mohamedmomen9/tagerlyApi/test_coverage)
